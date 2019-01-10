@@ -1,0 +1,3 @@
+User-Agent: *
+Sitemap: https://alekseyzabelin.ru/sitemap.xml
+Host: alekseyzabelin.ru
