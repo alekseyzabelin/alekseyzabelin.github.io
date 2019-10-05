@@ -157,6 +157,10 @@ https://alekseyzabelin.ru/gallery/img/st_light_017.jpg
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).on('ready', function() {
+      
+      var cw = $('.vertical-center-4').width();
+      $('.vertical-center-4').css({'height':cw+'px'});
+
       $(".vertical-center-4").slick({
         dots: true,
         dotsClass: 'slick-dots slider_dots',
