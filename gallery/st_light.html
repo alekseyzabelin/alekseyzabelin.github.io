@@ -17,8 +17,14 @@
       box-sizing: border-box;
     }
     .slider {
-        width: 55%;
+        width: 57%;
+        /*width: 90vh;*/
+        /*height: 90vh;*/
         margin: 1rem auto;
+    }
+    .vertical-center-4{
+        /*height: 90vh;*/
+        /*width: 90vh;*/
     }
     .slick-slide {
       margin: 0px 57px;
@@ -70,79 +76,93 @@
     .slider{
       /*height: 90vh;*/
     }
+    .slide_img_sq{
+      border: dotted 1px green;
+    }
   </style>
 </head>
 <body>
   <section class="vertical-center-4 slider">
-<!-- https://alekseyzabelin.ru/gallery/img/st_light_001.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_002.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_003.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_004.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_005.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_006.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_007.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_008.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_009.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_010.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_011.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_012.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_013.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_014.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_015.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_016.jpg
-https://alekseyzabelin.ru/gallery/img/st_light_017.jpg
-
- --><div class="slide_img">
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_001.jpg">
     </div>
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_002.jpg">
     </div>
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_003.jpg">
     </div>
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_004.jpg">
     </div>
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_005.jpg">
     </div>
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_006.jpg">
     </div>
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_007.jpg">
     </div>
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_008.jpg">
     </div>
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_009.jpg">
     </div>
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_010.jpg">
     </div>
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_011.jpg">
     </div>
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_012.jpg">
     </div>
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_013.jpg">
     </div>
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_014.jpg">
     </div>
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_015.jpg">
     </div>
-    <!-- <div> class="slide_img" -->
-      <!-- <img src="./img/st_light/st_light_016.jpg"> -->
-    <!-- </div> -->
-    <div class="slide_img">
+  </div>
+  <div>
+    <div class="slide_img_sq">
       <img src="./img/st_light/st_light_017.jpg">
     </div>
+  </div>
   </section>
   <p id="sign"><strong>Алексей Забелин</strong> часть серии: &laquo;Петербургский Свет&raquo; 2019</br>ч+б 135 пленка</p>
   <div class="story">
@@ -158,8 +178,8 @@ https://alekseyzabelin.ru/gallery/img/st_light_017.jpg
   <script type="text/javascript">
     $(document).on('ready', function() {
 
-     $('.slide_img'     var cw = $('.vertical-center-4').width();
-  ).css({'height':cw+'px'});
+      
+      
 
       $(".vertical-center-4").slick({
         dots: true,
@@ -168,9 +188,13 @@ https://alekseyzabelin.ru/gallery/img/st_light_017.jpg
         vertical: false,
         horisontal: true,
         centerMode: true,
+        variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1
       });
+      
+      // var cw = $('.vertical-center-4').width();
+      // $('.slide_img_sq').css({'height':cw+'px'});
     });
 </script>
 
