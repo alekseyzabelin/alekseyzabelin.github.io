@@ -1520,12 +1520,16 @@
 
 	h2 {
 		font-size: 1.35em;
+		padding: 3em;
+    	text-align: center;
 	}
 
 		@media screen and (max-width: 736px) {
 
 			h2 {
-				font-size: 1em;
+				font-size: 1.07em;
+				padding: 2em;
+    			text-align: center;
 			}
 
 		}
@@ -1867,18 +1871,27 @@
 		border-bottom: none;
 		position: relative;
 	}
+	.icon > .svg_img{
+		width: 1.7em;
+		height: auto;
+		vertical-align: middle;
+		opacity: 0.49;
+	}
+	.icon > .svg_img:hover{
+		opacity: 0.77;
+	}
 	.icon > .label {
 			display: none;
 		}
 
-		.icon:before {
+		/*.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
-		}
+		}*/
 
 		.icon > .label {
 			display: none;
@@ -2011,6 +2024,7 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			text-align: center;
 		}
 
 			ul.icons li {
